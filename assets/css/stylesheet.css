@@ -1,0 +1,766 @@
+/*Général_______________________________________________________________________
+______________________________________________________________________________*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: inherit;
+    background-color: #DADADA;
+    height: auto;
+    min-height: 100%;
+}
+
+.pusher {
+    background-color: #DADADA!important;
+}
+
+.ui.container {
+    margin: inherit!important;
+    width: 100%;
+}
+
+ui.stackable.grid {
+    width: 100%;
+}
+
+
+/*Navbar_______________________________________________________________________
+_____________________________________________________________________________*/
+
+
+/*Sidebar____________________________________________________________________*/
+
+.ui.sidebar.right.inverted.vertical.menu {
+    border-left: 1px solid black;
+    padding: inherit;
+}
+
+#logo {
+    text-align: left!important;
+    background-color: #FAA500!important;
+    color: black!important;
+    font-size: 28px;
+    margin: auto;
+    padding: inherit;
+    padding-bottom: 40px;
+}
+
+#logo>.text {
+    text-align: center!important;
+    position: inherit;
+    top: 30px;
+    left: 25px;
+    font-size: 30px;
+}
+
+.header.item>img {
+    text-align: left!important;
+    width: 150px!important;
+    position: inherit;
+    top: 20px;
+    left: 50px;
+}
+
+a.item {
+    text-align: right!important;
+    font-size: 25px;
+    padding-right: 5px!important;
+}
+
+.ui.right.fixed.menu {
+    background-color: #FFA500;
+    border: 1px solid black;
+    border-right: 1px solid #FFA500;
+    padding: 0px 10px 0px 10px;
+    margin-top: 90px!important;
+    margin: auto;
+    height: 20px;
+    font-size: 20px!important;
+    cursor: pointer;
+    width: 55px;
+}
+
+.ui.right.fixed.menu:hover {
+    width: 100px;
+    padding-left: 20px;
+}
+
+.ui.right.fixed.menu>.content.icon {
+    padding-top: 20px;
+    margin-left: -15px;
+}
+
+.ui.left.animated.button {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0)!important;
+    margin-left: -11px;
+    margin-right: 10px!important;
+}
+
+@media all and (min-width: 768px) {
+    .ui.right.fixed.menu {
+        display: none;
+    }
+    .ui.right.fixed.menu>.content.icon {
+        display: none;
+    }
+    .ui.left.animated.button {
+        display: none;
+    }
+}
+
+
+/*Navbar_____________________________________________________________________*/
+
+.ui.top.fixed.secondary.pointing.menu {
+    background-color: #FFA500;
+    border-bottom: 2px solid black;
+}
+
+
+@media all and (max-width: 767px) {
+    .ui.top.fixed.secondary.pointing.menu {
+        display: none;
+    }
+}
+
+.right.menu {
+    padding-right: 20px;
+}
+
+.right.menu>.item {
+    font-size: 25px;
+}
+
+a.item {
+    padding: 5px 10px 25px 10px!important;
+}
+
+@media all and (max-width: 1099px) {
+    .right.menu>.item {
+        font-size: 20px;
+    }
+}
+
+.right.menu>.item:active {
+    background-color: #FFF;
+    box-shadow: 1px 1px 12px #555!important;
+}
+
+.menu.logo>.item {
+    color: black!important;
+    font-size: 35px;
+    padding: inherit!important;
+}
+
+.menu.logo>.item>img {
+    width: 80px!important;
+    padding-left: 10px;
+}
+
+#header {
+    height: 70vh;
+    width: 100vw;
+    background-image: url('../img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: -14px;
+}
+
+#header>h1 {
+    padding-top: 200px;
+    color: white;
+    font-size: 70px;
+}
+
+#header>h2 {
+    color: white;
+    font-size: 65px;
+}
+
+#header>p {
+    width: 300px;
+    border-top: 5px solid white;
+    margin: auto;
+}
+
+@media all and (max-width: 767px) {
+  #header {
+    height: 30vh;
+  }
+}
+
+@media all and (max-width: 767px) {
+  #header {
+    height: 30vh;
+  }
+  #header>h1 {
+      padding-top: 50px;
+      font-size: 60px;
+  }
+
+  #header>h2 {
+      font-size: 55px;
+  }
+
+  #header>p {
+      width: 250px;
+  }
+}
+
+
+/*Page d'accueil_______________________________________________________________
+_____________________________________________________________________________*/
+
+
+/*Card_______________________________________________________________________*/
+
+.ui.card {
+    width: 500px;
+    height: 400px;
+    background-color: #FFA500;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 12px #555;
+    cursor: pointer;
+    margin: 80px 20px 40px 0px!important;
+}
+
+@media all and (max-width: 1499px) {
+    .column.left, .column.right {
+        margin-left: 80px;
+    }
+    .column.left {
+        margin-left: -50px;
+    }
+}
+
+@media all and (max-width: 1299px) {
+    .ui.card {
+        width: 400px;
+        margin-right: 20px!important;
+    }
+    .column.left {
+        margin-left: -20px;
+    }
+}
+
+@media all and (max-width: 1029px) {
+    .ui.card {
+        width: 350px;
+        height: 350px;
+        margin-right: 20px!important;
+    }
+    .column.left {
+        margin-left: -40px;
+    }
+}
+
+@media all and (max-width: 889px) {
+    .ui.card {
+        width: 300px;
+        height: 300px;
+        margin-right: 20px!important;
+    }
+    .column.left {
+        margin-left: -60px;
+    }
+    #title {
+        font-size: 40px;
+        line-height: 275px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .ui.card {
+        width: 500px;
+        height: 500px;
+        margin-top: 50px!important;
+    }
+    .column.left, .column.right {
+        margin-left: -40px;
+        margin-right: 250px;
+    }
+}
+
+@media all and (max-width: 629px) {
+    .column.left, .column.right {
+        margin-left: -60px;
+    }
+}
+
+@media all and (max-width: 550px) {
+    .column.left, .column.right {
+        margin-left: -90px;
+    }
+}
+
+#title {
+    font-size: 50px;
+    line-height: 350px;
+    position: inherit;
+    text-align: center;
+}
+
+@media all and (max-width: 1029px) {
+    #title {
+        font-size: 45px;
+        line-height: 300px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #title {
+        font-size: 50px;
+        line-height: 450px;
+        position: inherit;
+        text-align: center;
+    }
+}
+
+.header {
+    font-size: 40px!important;
+}
+
+@media all and (max-width: 889px) {
+    .header {
+        font-size: 30px!important;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .header {
+        font-size: 40px!important;
+    }
+}
+
+
+/*Bouton voir plus___________________________________________________________*/
+
+.btnPannel {
+    width: 30%;
+    height: 10%;
+    position: absolute!important;
+    top: 5px;
+    right: 5px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    line-height: 40px;
+    background-color: #DADADA;
+}
+
+.btnPannel:hover {
+    text-decoration: none;
+    color: black;
+}
+
+@media all and (max-width: 1029px) {
+    .btnPannel {
+        width: 30%;
+        height: 10%;
+        position: absolute!important;
+        top: 5px;
+        right: 5px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        line-height: 35px;
+        background-color: #DADADA;
+    }
+}
+
+@media all and (max-width: 889px) {
+    .btnPannel {
+        width: 30%;
+        height: 10%;
+        position: absolute!important;
+        top: 5px;
+        right: 5px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        line-height: 30px;
+        background-color: #DADADA;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .btnPannel {
+        width: 30%;
+        height: 7%;
+        position: absolute!important;
+        top: 5px;
+        right: 5px;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        line-height: 35px;
+        background-color: #DADADA;
+    }
+}
+
+
+/*carte deces________________________________________________________________*/
+
+table {
+    margin-top: 40px!important;
+    margin: auto;
+}
+
+th {
+    color: black;
+    font-size: 30px!important;
+    padding: 0px 10px 20px 10px;
+}
+
+td {
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    border-top: 1px solid black;
+}
+
+@media all and (max-width: 1029px) {
+    table {
+        margin-top: 20px!important;
+        margin: auto;
+    }
+    th {
+        color: black;
+        font-size: 25px!important;
+        padding: 0px 10px 15px 10px;
+    }
+    td {
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        padding: 8px 10px 8px 10px;
+        border-top: 1px solid black;
+    }
+}
+
+@media all and (max-width: 889px) {
+    table {
+        margin-top: 10px!important;
+        margin: auto;
+    }
+    th {
+        color: black;
+        font-size: 20px!important;
+        padding: 0px 10px 10px 10px;
+    }
+    td {
+        font-size: 18px;
+        color: black;
+        text-align: center;
+        padding: 6px 10px 6px 10px;
+        border-top: 1px solid black;
+    }
+}
+
+@media all and (max-width: 767px) {
+    table {
+        margin-top: 80px!important;
+        margin: auto;
+    }
+    th {
+        color: black;
+        font-size: 30px!important;
+        padding: 0px 10px 20px 10px;
+    }
+    td {
+        font-size: 25px;
+        color: black;
+        text-align: center;
+        padding: 10px 10px 10px 10px;
+        border-top: 1px solid black;
+    }
+}
+
+
+/*carte planning_____________________________________________________________*/
+
+.threeDaysPlanning {
+    margin-top: 30px!important;
+    margin-left: 40px!important;
+    color: black!important;
+}
+
+.threeDaysPlanning>h4 {
+    padding-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    margin-left: -40px!important;
+}
+
+#tabPlanning>h5 {
+    font-size: 20px;
+    text-align: center!important;
+}
+
+#tabPlanning>p {
+    font-size: 18px!important;
+    font-weight: bold;
+    text-align: center!important;
+}
+
+@media all and (max-width: 1029px) {
+    .threeDaysPlanning {
+        margin-top: 10px!important;
+        margin-left: 40px!important;
+        color: black!important;
+    }
+    .threeDaysPlanning>h4 {
+        padding-bottom: 10px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: -40px!important;
+    }
+    #tabPlanning>h5 {
+        font-size: 18px;
+        text-align: center!important;
+    }
+    #tabPlanning>p {
+        font-size: 16px!important;
+        font-weight: bold;
+        text-align: center!important;
+    }
+}
+
+@media all and (max-width: 889px) {
+    .threeDaysPlanning {
+        margin-top: 10px!important;
+        margin-left: 40px!important;
+        color: black!important;
+    }
+    .threeDaysPlanning>h4 {
+        margin-bottom: 0px;
+        padding-bottom: 10px;
+        font-size: 25px;
+        text-align: center;
+        margin-left: -40px!important;
+    }
+    #tabPlanning>h5 {
+        font-size: 18px;
+        text-align: center!important;
+    }
+    #tabPlanning>p {
+        font-size: 16px!important;
+        font-weight: bold;
+        text-align: center!important;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .threeDaysPlanning {
+        margin-top: 80px!important;
+        margin-left: 40px!important;
+        color: black!important;
+    }
+    .threeDaysPlanning>h4 {
+        padding-bottom: 10px;
+        font-size: 30px;
+        text-align: center;
+        margin-left: -40px!important;
+    }
+    #tabPlanning>h5 {
+        font-size: 20px;
+        text-align: center!important;
+    }
+    #tabPlanning>p {
+        font-size: 18px!important;
+        font-weight: bold;
+        text-align: center!important;
+    }
+}
+
+.column.today {
+    margin-left: -40px;
+}
+
+.column.tomorrow {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+
+/*carte stats________________________________________________________________*/
+
+.description.stats {
+    text-align: center;
+    color: black!important;
+}
+
+.description.stats>h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.statsFav {
+    width: 95%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+@media all and (max-width: 1299px) {
+    .description.stats>h2 {
+        margin-top: 25px!important;
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 1029px) {
+    .description.stats>h2 {
+        margin-top: 15px!important;
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 889px) {
+    .description.stats>h2 {
+        margin-top: 10px!important;
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .description.stats>h2 {
+        margin-top: 50px!important;
+        font-size: 30px;
+    }
+}
+
+
+/*carte convois______________________________________________________________*/
+
+.imgTruck {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+#tabConv {
+    height: 200px;
+    text-align: left;
+    color: black!important;
+}
+
+#tabConv>h4, #tabConv>h5, #tabConv>p {
+    margin-left: 20px!important;
+}
+
+#tabConv>h4 {
+    margin-top: 30px;
+    font-size: 30px;
+}
+
+#tabConv>h5 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+#tabConv>p {
+    font-size: 20px;
+}
+
+@media all and (max-width: 1029px) {
+    #tabConv>h4 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    #tabConv>h5 {
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    #tabConv>p {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 889px) {
+    #tabConv>h4 {
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    #tabConv>h5 {
+        font-size: 20px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    #tabConv>p {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #tabConv>h4 {
+        margin-top: 60px;
+        font-size: 30px;
+    }
+    #tabConv>h5 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    #tabConv>p {
+        font-size: 20px;
+    }
+}
+
+
+/*Page décès___________________________________________________________________
+_____________________________________________________________________________*/
+
+.ui.styled.fluid.accordion {
+    margin-top: 0px;
+}
+
+
+/*Page planning________________________________________________________________
+_____________________________________________________________________________*/
+
+div#mycalendar {
+    margin-top: 70px;
+}
+
+@media all and (max-width: 889px) {
+    div#mycalendar {
+        margin-top: 0px;
+    }
+}
+
+
+/*Footer_______________________________________________________________________
+_____________________________________________________________________________*/
+
+footer {
+    height: 70px;
+    background-color: #FFA500;
+    border-top: 1px solid black;
+    width: 100%;
+    bottom: 0!important;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media all and (max-width: 889px) {
+    footer {
+        margin-top: 85px;
+    }
+}

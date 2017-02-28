@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/img/logo.ico">
+    <link rel="stylesheet" href="bower_components/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" href="Monthly-master/css/monthly.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <link rel="stylesheet" href="bower_components/css-ripple-effect/dist/ripple.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="bower_components/semantic/dist/semantic.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="Monthly-master/js/monthly.js"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+    <title>Neptune</title>
+</head>
+
+<body>
+
+    <div class="ui sidebar right inverted vertical menu">
+        <a href="#" id="logo" class="header item"><img src="assets/img/logo.ico" alt="Neptune"><span class="text">Neptune</span></a>
+        <a href="/deces.html" class="item"><i class="user circle outline icon"></i><span class="text">Décès</span></a>
+        <a href="../planning.html" class="item"><i class="calendar icon"></i><span class="text">Planning</span></a>
+        <a href="#" class="item"><i class="bar chart icon"></i><span class="text">Statistiques</span></a>
+        <a href="../convois.html" class="item"><i class="road icon"></i><span class="text">Convois</span></a>
+        <a href="#" class="item"><i class="sign out icon"></i><span class="text">Déconnexion</span></a>
+    </div>
+
+    <div class="ui right fixed menu">
+        <div class="ui left animated button" tabindex="0">
+            <div class="visible content"></div>
+            <div class="hidden content">Menu</div>
+        </div>
+        <i class="content icon"></i>
+    </div>
+
+    <div class="pusher">
+        <!-- navbar -->
+        <div class="ui top fixed secondary pointing menu">
+            <div class="menu logo">
+                <a class="item"><img src="assets/img/logo.ico" alt="Neptune">Neptune</a>
+            </div>
+            <div class="right menu">
+                <a href="deces.html" class="item">Décès</a>
+                <a href="planning.html" class="item">Planning</a>
+                <a href="#" class="item">Statistiques</a>
+                <a href="convois.html" class="item">Convois</a>
+                <a href="#" class="item">Déconnexion</a>
+            </div>
+        </div>
+
+        <div id="header">
+            <h1>Bienvenue</h1>
+            <p></p>
+            <h2>Neptune</h2>
+        </div>
+
+        <!-- grille semantic -->
+        <div class="ui three column centered grid">
+            <div class="row">
+                <div class="column left">
+                    <div class="ui shape deces">
+                        <div class="sides">
+                            <!-- front -->
+                            <div class="active side front">
+                                <div class="ui card deces">
+                                    <div class="content">
+                                        <h1 id="title">Décès</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bak -->
+                            <div class="side back">
+                                <div class="ui card deces">
+                                    <div class="content">
+                                        <div class="header">Décès
+                                            <a href="deces.html" class="ripple btnPannel">Voir plus</a>
+                                        </div>
+                                        <div class="description">
+                                            <table>
+                                                <th>Civilité</th>
+                                                <th>Nom</th>
+                                                <th>Date</th>
+                                                <tr>
+                                                    <td>Mr</td>
+                                                    <td>Durand</td>
+                                                    <td>04/01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mdm</td>
+                                                    <td>Durandal</td>
+                                                    <td>04/01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unknow</td>
+                                                    <td>Durand</td>
+                                                    <td>04/01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unknow</td>
+                                                    <td>Durand</td>
+                                                    <td>04/01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unknow</td>
+                                                    <td>Durand</td>
+                                                    <td>04/01</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Unknow</td>
+                                                    <td>Durand</td>
+                                                    <td>04/01</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fin carte -->
+                        </div>
+                    </div>
+                    <!--fin colonne -->
+                </div>
+
+
+                <div class="column right">
+                    <div class="ui shape planning">
+                        <div class="sides">
+                            <!-- front -->
+                            <div class="active side front">
+                                <div class="ui card planning">
+                                    <div class="content">
+                                        <h1 id="title">Planning</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bak -->
+                            <div class="side back">
+                                <div class="ui card planning">
+                                    <div class="content">
+                                        <div class="header">Planning
+                                            <a href="planning.html" class="ripple btnPannel">Voir plus</a>
+                                        </div>
+                                        <div class="description">
+                                            <div class="threeDaysPlanning">
+                                                <h4>Trois prochain jours</h4>
+                                                <div class="ui three column centered grid">
+                                                    <div class="row">
+                                                        <div id="tabPlanning" class="column today">
+                                                            <h5>{JOUR}</h5>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                        </div>
+                                                        <div id="tabPlanning" class="column tomorrow">
+                                                            <h5>{JOUR+1}</h5>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                        </div>
+                                                        <div id="tabPlanning" class="column afterTomorrow">
+                                                            <h5>{JOUR+2)</h5>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                            <p>details</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fin carte -->
+                        </div>
+                    </div>
+                    <!-- colonne -->
+                </div>
+                <!-- fin row -->
+            </div>
+
+            <div class="row">
+                <div class="column left">
+                    <div class="ui shape stats">
+                        <div class="sides">
+                            <!-- front -->
+                            <div class="active side front">
+                                <div class="ui card stats">
+                                    <div class="content">
+                                        <h1 id="title">Statistiques</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bak -->
+                            <div class="side back">
+                                <div class="ui card stats">
+                                    <div class="content">
+                                        <div class="header stats">Statistiques
+                                            <a href="#" class="ripple btnPannel">Voir plus</a>
+                                        </div>
+                                        <div class="description stats">
+                                            <h2>Nombres de contrats par agences</h2>
+                                            <img class="statsFav" src="assets/img/camembert.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- fin carte -->
+                        </div>
+                    </div>
+                    <!-- fin colone -->
+                </div>
+
+
+                <div class="column right">
+                    <div class="ui shape convois">
+                        <div class="sides">
+                            <!-- front -->
+                            <div class="active side front">
+                                <div class="ui card convois">
+                                    <div class="content">
+                                        <h1 id="title">Convois</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- bak -->
+                            <div class="side back">
+                                <div class="ui card convois">
+                                    <div class="content">
+                                        <div class="header">Convois
+                                            <a href="convois.html" class="ripple btnPannel">Voir plus</a>
+                                        </div>
+                                        <div class="description">
+                                            <img class="imgTruck" src="assets/img/camion.png" alt="">
+                                            <div id="tabConv">
+                                                <h4>Dernier convois</h4>
+                                                <h5>Date</h5>
+                                                <p>{DATE}</p>
+                                                <h5>Départ</h5>
+                                                <p>{DEPART}</p>
+                                                <h5>Arrivée</h5>
+                                                <p>{ARRIVEE}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fin back -->
+                            </div>
+                            <!-- fin carte -->
+                        </div>
+                    </div>
+                    <!-- fin colone -->
+                </div>
+                <!-- fin row -->
+            </div>
+
+            <!-- grille semantic -->
+        </div>
+        <footer>
+            <p>je suis un footer</p>
+        </footer>
+        <!-- div pusher -->
+    </div>
+
+</body>
+
+</html>
